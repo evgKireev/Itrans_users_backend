@@ -1,7 +1,7 @@
 const cors = require('cors');
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3500;
+const PORT = process.env.PORT || 3500;
 const bodyParser = require('body-parser');
 const passport = require('passport');
 
@@ -19,6 +19,6 @@ require('./middleware/passport')(passport);
 const routes = require('./settings/routes');
 routes(app);
 
-app.listen(port, () => {
-  console.log(`App listen on port ${port}`);
+app.listen(PORT, () => {
+  console.log(`App listen on port ${PORT}`);
 });
