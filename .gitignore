@@ -2,7 +2,6 @@
 
 # dependencies
 /node_modules
-dbenv.js
 /.pnp
 .pnp.js
 
